@@ -9,19 +9,17 @@
 #include <string>
 #include "function.h"
 
-using namespace std;
-
 int main() {
     // Set the full, first, and last name
-    string fullName = "Juwon Hong";
-    string firstName, lastName;
+    std::string fullName = "Juwon Hong";
+    std::string firstName, lastName;
 
     // Split the first and last name
     splitName(fullName, firstName, lastName);
 
     // Print first name and last name
-    cout << "First Name: " << firstName << endl;
-    cout << "Last Name: " << lastName << endl;
+    std::cout << "First Name: " << firstName << std::endl;
+    std::cout << "Last Name: " << lastName << std::endl;
 
     // Greeting full name
     greet(fullName);
